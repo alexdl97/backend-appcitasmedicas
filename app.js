@@ -30,8 +30,8 @@ app.post('/user/login', jsonParser, (req, res) => {
                 message: 'Usuario correcto'
             });
         } else {
+            ok: false,
             res.json({
-                ok: false,
                 message: 'Usuario o contraseña incorrectos.'
             });
         }
